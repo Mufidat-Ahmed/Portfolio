@@ -97,6 +97,7 @@ html {
     backdrop-filter: blur(4px) brightness(40%);
     box-shadow: 0 0 20px black;
     transition: 0.2s linear;
+    display: none;
 }
 
 .dropdown .links a {
