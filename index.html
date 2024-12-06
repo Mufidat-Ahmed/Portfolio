@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="style.css">
+    <title>Mufidat's Portfolio</title>
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="logo" data-aos="zoom-in" data-aos-duration="1500">
+                Mufidat <span>Ahmed-Rufai</span>
+            </div>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#projects">Projects</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#services">Services</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
+        </div>
+        <div class="dropdown">
+            <div class="links">
+                <a href="#">Home</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#services">Service</a>
+                <a href="#contact">Contact</a>
+                <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration="3000">
+                <img src="Photos.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1>Hey I'm <span>Mufidat</span></h1>
+                <div class="typewriter">I'm a <span class="typewriter-text">Frontend Developer</span><label for=""></label></div>
+                <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="1100">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit quasi commodi quia rerum, iste corporis expedita in excepturi nesciunt repellendus quisquam amet provident ad mollitia debitis odit voluptatem necessitatibus tempora.</p>
+                <div class="social-links">
+                    <a href="https://github.com/Mufidat-Ahmed" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+                    <a href="malito:imufidatahmad@gmail.com" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-google"></i></a>
+                    <a href="https://www.linkedin.com/in/mufidat-ahmad-rufai/" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/MufidatAhmad" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration="1500" data-aos-delay="1800">
+                    <button onclick="location.href='#contact'">Hire me</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            offset: 0
+        });
+    </script>
+    <script src="script.js"></script>
+</body>
+
+<section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects-container">
+        <div class="project-item">
+            <img src="project1-image.jpg" alt="Project 1">
+            <h3>Frosted Dreams</h3>
+            <p>Frosted Dreams is an e-commerce platform for bakeries, offering a seamless shopping experience for customers to browse and purchase baked goods online. With a user-friendly interface, it allows easy product browsing, secure checkout, and account
+                management. Bakery owners can manage their products and orders via an intuitive admin panel. Technologies Used: Frontend: Angular Backend: Node.js, Express Database: MongoDB Payment Integration: Stripe</p>
+            <a href="https://drive.google.com/file/d/1bS0TbL1TYMjyLytfTzYAhb5WM1sAGcw4/view?usp=drive_link" target="_blank" class="btn demo-btn">Live Demo</a>
+            <a href="https://github.com/Mufidat-Ahmed/Frosted-Dreams" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="project-item">
+            <img src="project2-image.jpg" alt="Project 2">
+            <h3>YQSF Abuja</h3>
+            <p>Short summary of the project, including the tools or frameworks you used.</p>
+            <a href="https://github.com/Mufidat-Ahmed/YQSF-Abuja" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <div class="project-item">
+            <img src="project3-image.jpg" alt="Project 3">
+            <h3>Project 3</h3>
+            <p>Highlight key aspects of the project, such as challenges, solutions, and the impact it had.</p>
+            <a href="#" target="_blank" class="btn">View on GitHub</a>
+        </div>
+
+        <!-- Add more projects here -->
+    </div>
+</section>
+
+
+<section id="skills">
+    <h2>My Skills</h2>
+    <div class="skills-container">
+        <!-- Skill Item 1: HTML -->
+        <div class="skill-item">
+            <i class="fab fa-html5"></i>
+            <!-- FontAwesome Icon for HTML -->
+            <div class="skill-name">HTML</div>
+            <div class="progress-bar">
+                <span style="width: 90%;"></span>
+                <!-- Progress width corresponds to skill proficiency -->
+            </div>
+        </div>
+
+        <!-- Skill Item 2: CSS -->
+        <div class="skill-item">
+            <i class="fab fa-css3-alt"></i>
+            <!-- FontAwesome Icon for CSS -->
+            <div class="skill-name">CSS</div>
+            <div class="progress-bar">
+                <span style="width: 85%;"></span>
+                <!-- Adjust width as needed -->
+            </div>
+        </div>
+
+        <!-- Skill Item 3: JavaScript -->
+        <div class="skill-item">
+            <i class="fab fa-js-square"></i>
+            <!-- FontAwesome Icon for JavaScript -->
+            <div class="skill-name">JavaScript</div>
+            <div class="progress-bar">
+                <span style="width: 80%;"></span>
+            </div>
+        </div>
+
+        <!-- Skill Item 4: React -->
+        <div class="skill-item">
+            <i class="fab fa-react"></i>
+            <!-- FontAwesome Icon for React -->
+            <div class="skill-name">React</div>
+            <div class="progress-bar">
+                <span style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <!-- Skill Item 5: Node.js -->
+        <div class="skill-item">
+            <i class="fab fa-node"></i>
+            <!-- FontAwesome Icon for Node.js -->
+            <div class="skill-name">Node.js</div>
+            <div class="progress-bar">
+                <span style="width: 75%;"></span>
+            </div>
+        </div>
+
+        <!-- Skill Item 6: Git -->
+        <div class="skill-item">
+            <i class="fab fa-git"></i>
+            <!-- FontAwesome Icon for Git -->
+            <div class="skill-name">Git</div>
+            <div class="progress-bar">
+                <span style="width: 80%;"></span>
+            </div>
+        </div>
+
+        <!-- Skill Item 7: Angular -->
+        <div class="skill-item">
+            <i class="fab fa-angular"></i>
+            <!-- FontAwesome Icon for Angular -->
+            <div class="skill-name">Angular</div>
+            <div class="progress-bar">
+                <span style="width: 70%;"></span>
+            </div>
+        </div>
+
+        <!-- Skill Item 8: SQL -->
+        <div class="skill-item">
+            <i class="fas fa-database"></i>
+            <!-- FontAwesome Icon for SQL -->
+            <div class="skill-name">SQL</div>
+            <div class="progress-bar">
+                <span style="width: 65%;"></span>
+            </div>
+        </div>
+    </div>
+    <!-- Call-to-Action -->
+    <div class="cta">
+        <p>Want to see more of my work? Check out my <a href="https://github.com/Mufidat-Ahmed">projects</a>.</p>
+    </div>
+</section>
+
+
+<section id="services">
+    <h2>Services</h2>
+    <div class="service-container">
+        <!-- Service 1 -->
+        <div class="service-item">
+            <i class="fas fa-laptop-code"></i>
+            <h3>Web Development</h3>
+            <p class="service-description">Responsive websites using HTML, CSS, JavaScript, and frameworks like React & Angular.</p>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="service-item">
+            <i class="fas fa-paint-brush"></i>
+            <h3>UI/UX Design</h3>
+            <p class="service-description">Creating intuitive and visually appealing user interfaces with user-centric designs.</p>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="service-item">
+            <i class="fas fa-code-branch"></i>
+            <h3>Frontend Frameworks</h3>
+            <p class="service-description">Expertise in React, Angular, and Vue.js for building dynamic, reusable components.</p>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="service-item">
+            <i class="fas fa-tachometer-alt"></i>
+            <h3>Performance Optimization</h3>
+            <p class="service-description">Optimizing website performance with strategies like lazy loading, caching, and code minification.</p>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="service-item">
+            <i class="fas fa-git-alt"></i>
+            <h3>Version Control</h3>
+            <p class="service-description">Using Git and GitHub for version control to collaborate and manage project changes.</p>
+        </div>
+
+        <!-- Service 9 -->
+        <div class="service-item">
+            <i class="fas fa-wrench"></i>
+            <h3>Maintenance & Updates</h3>
+            <p class="service-description">Providing ongoing support, bug fixes, and website updates for optimal performance.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form action="https://formspree.io/f/xovqboye" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+</html>
