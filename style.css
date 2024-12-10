@@ -38,7 +38,7 @@ html {
 }
 
 .logo span {
-    color: #191970;
+    color: #1E90FF;
     text-shadow: 0 0 10px #191970;
 }
 
@@ -74,7 +74,7 @@ html {
     left: 0;
     width: 0%;
     height: 3px;
-    background-color: #191970;
+    background-color: #1E90FF;
     transition: 0.2s linear;
 }
 
@@ -83,7 +83,7 @@ html {
 }
 
 .nav-container .links a:hover {
-    color: #191970;
+    color: #1E90FF;
 }
 
 .dropdown {
@@ -111,7 +111,7 @@ html {
 }
 
 .dropdown .links a:hover {
-    background-color: #191970;
+    background-color: #1E90FF;
 }
 
 section {
@@ -133,7 +133,7 @@ section {
     height: auto;
     border-radius: 100%;
     overflow: hidden;
-    box-shadow: 0 0 50px #191970;
+    box-shadow: 0 0 50px #1E90FF;
 }
 
 .main-container .image img {
@@ -167,7 +167,7 @@ section {
 }
 
 .content h1 span {
-    color: #191970;
+    color: #1E90FF;
     text-shadow: 0 0 10px #191970;
 }
 
@@ -177,7 +177,7 @@ section {
 }
 
 .content .typewriter-text {
-    color: #191970;
+    color: #1E90FF;
     text-shadow: 0 0 10px #191970;
 }
 
@@ -195,7 +195,7 @@ section {
     background-color: transparent;
     border: 0.2rem solid #191970;
     border-radius: 50%;
-    color: #191970;
+    color: #1E90FF;
     margin: 5px 15px;
     font-size: 1.5rem;
     transition: 0.2s linear;
@@ -204,7 +204,7 @@ section {
 .social-links i:hover {
     scale: 1.3;
     color: black;
-    background-color: #191970;
+    background-color: #1E90FF;
     filter: drop-shadow(0 0 10px #191970);
 }
 
@@ -224,7 +224,7 @@ section {
 
 .content button:hover {
     scale: 1.1;
-    color: #191970;
+    color: #1E90FF;
     border: 2px solid #191970;
     background-color: transparent;
     font-weight: 700;
@@ -262,9 +262,14 @@ section {
         width: 50%;
         height: 60%;
     }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .project-item {
-        width: calc(100% - 20px);
+        width: 100%;
         /* Make project items full width */
+        height: auto;
         margin-bottom: 20px;
         /* Adjust margin as needed */
     }
@@ -282,9 +287,14 @@ section {
     .main-container button {
         margin-top: 15px;
     }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .project-item {
-        width: calc(100% - 20px);
+        width: 100%;
         /* Make project items full width */
+        height: auto;
         margin-bottom: 20px;
         /* Adjust margin as needed */
     }
@@ -300,8 +310,13 @@ section {
     .main-container .image {
         width: 90%;
     }
+    .projects-container {
+        flex-direction: column;
+        align-items: center;
+    }
     .project-item {
-        width: calc(100% - 50px);
+        width: 100%;
+        height: auto;
         /* Make project items full width */
     }
     .service-container {
@@ -323,7 +338,7 @@ section {
 #projects h2 {
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #191970;
+    color: #1E90FF;
     /* Accent color */
     font-weight: bold;
 }
@@ -331,14 +346,13 @@ section {
 .projects-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space;
-    gap: 20px;
+    justify-content: space-around;
     padding: 0 15px;
 }
 
 .project-item {
     background-color: white;
-    border-radius: 10px;
+    border-radius: 5px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
     width: calc(50% - 20px);
     padding: 30px;
@@ -411,7 +425,7 @@ section {
 #skills h2 {
     font-size: 2.5rem;
     margin-bottom: 20px;
-    color: #191970;
+    color: #1E90FF;
     font-weight: bold;
 }
 
@@ -487,7 +501,7 @@ section {
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 30px;
-    color: #191970;
+    color: #1E90FF;
     /* Accent color */
     font-weight: bold;
 }
@@ -565,7 +579,7 @@ section {
 #contact h2 {
     font-size: 2rem;
     margin-bottom: 20px;
-    color: #191970;
+    color: #1E90FF;
     /* Highlight color */
     text-shadow: 0 0 10px #191970;
 }
@@ -596,7 +610,7 @@ section {
 
 #contact input:focus,
 #contact textarea:focus {
-    border-color: #191970;
+    border-color: #1E90FF;
     /* Change color on focus */
     box-shadow: 0 0 10px #191970;
 }

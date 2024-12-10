@@ -238,12 +238,14 @@
 
     <section id="contact">
         <h2>Contact Me</h2>
-        <form action="https://formspree.io/f/xovqboye" method="POST">
+        <form id="https://formspree.io/f/xovqboye" method="POST">
             <input type="text" name="name" placeholder="Your Name" required>
             <input type="email" name="email" placeholder="Your Email" required>
             <textarea name="message" placeholder="Your Message" required></textarea>
             <button type="submit">Send</button>
         </form>
+
+
     </section>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
@@ -262,6 +264,7 @@
         const hamburger = document.querySelector('.hamburg');
         const cancel = document.querySelector('.cancel');
         const dropdown = document.querySelector('.dropdown');
+        const contactForm = document.getElementById('contactForm');
 
         hamburger.addEventListener('click', () => {
             dropdown.style.display = 'block'; // Show dropdown
@@ -273,6 +276,13 @@
             dropdown.style.display = 'none'; // Hide dropdown
             hamburger.style.display = 'block'; // Show hamburger icon
             cancel.style.display = 'none'; // Hide cancel icon
+        });
+
+        contactForm.addEventListener('submit', function(event) {
+            setTimeout(() => {
+                contactForm.reset();
+                alert('Thank you! Your message has been sent.');
+            }, 500);
         });
     </script>
 </body>
