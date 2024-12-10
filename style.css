@@ -352,13 +352,13 @@ section {
 
 .project-item {
     background-color: white;
-    border-radius: 5px;
+    border-radius: 50px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    width: calc(90%);
+    width: 90%;
     padding: 30px;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    margin-bottom: 30px;
+    margin: 20px auto;
 }
 
 .project-item:hover {
